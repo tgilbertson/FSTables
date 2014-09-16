@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player_id: MyString
+  year_id: 1
+  week_id: 1
+  team_id: MyString
+  player_position: MyString
+  receiving_worth: 1
+  receiving_yards: 1
+
+two:
+  player_id: MyString
+  year_id: 1
+  week_id: 1
+  team_id: MyString
+  player_position: MyString
+  receiving_worth: 1
+  receiving_yards: 1

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  team_id: MyString
+  year_id: 1
+  week_id: 1
+  home_away: MyString
+  oppo_id: MyString
+  offensive_worth: 1
+  defensive_worth: 1
+  points_allowed: 1
+  points_scored: 1
+
+two:
+  team_id: MyString
+  year_id: 1
+  week_id: 1
+  home_away: MyString
+  oppo_id: MyString
+  offensive_worth: 1
+  defensive_worth: 1
+  points_allowed: 1
+  points_scored: 1
