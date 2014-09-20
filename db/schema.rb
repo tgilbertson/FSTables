@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140916051947) do
+ActiveRecord::Schema.define(version: 20140917051947) do
 
   create_table "passings", force: true do |t|
     t.string   "player_id"
@@ -33,7 +33,14 @@ ActiveRecord::Schema.define(version: 20140916051947) do
     t.string   "team_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "passings_id"
+    t.integer  "rushings_id"
+    t.integer  "receivings_id"
   end
+
+  add_index "players", ["passings_id"], name: "index_players_on_passings_id"
+  add_index "players", ["receivings_id"], name: "index_players_on_receivings_id"
+  add_index "players", ["rushings_id"], name: "index_players_on_rushings_id"
 
   create_table "receivings", force: true do |t|
     t.string   "player_id"
@@ -79,7 +86,10 @@ ActiveRecord::Schema.define(version: 20140916051947) do
     t.string   "team_name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "schedules_id"
   end
+
+  add_index "teams", ["schedules_id"], name: "index_teams_on_schedules_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

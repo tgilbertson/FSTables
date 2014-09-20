@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :passings
+  
+
   devise_for :users
   root "pages#home"
 
